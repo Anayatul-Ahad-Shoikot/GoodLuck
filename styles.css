@@ -91,7 +91,7 @@ body {
     }
 
     img {
-        height: 50vh;
+        height: 50%;
         width: auto;
     }
 
@@ -117,7 +117,7 @@ body {
     }
 
     img {
-        height: 50vh;
+        height: 50%;
         width: auto;
     }
 
@@ -143,6 +143,6 @@ body {
     }
 
     img {
-        height: 60vh;
+        height: 50%;
     }
 }
