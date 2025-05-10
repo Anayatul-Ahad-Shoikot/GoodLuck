@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Are you okay ?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlxejc4azZmeG5rMDJ3MjE2MGhscHBjdG53aTg0eWZlaDEza2NuYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/q6HBRVGPBo84SYNSHX/giphy.gif"
+                alt="Cute animated illustration">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">No</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Yes</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "p1.html";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
